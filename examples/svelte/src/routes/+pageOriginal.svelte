@@ -6,17 +6,17 @@
 	import ToggleButton from './ToggleButton.svelte';
 
 	const classes: { [key: string]: string } = {
-		'rgb(106, 10, 119)': 'container-royalpurpleshadow',
-		'rgb(255, 215, 0)': 'container-goldshadow',
-		'rgb(76, 12, 75)': 'container-darkpurpleshadow',
-		'rgb(128, 128, 128)': 'container-neutralgrayshadow'
+		'rgb(202, 37, 37)': 'container-redshadow',
+		'rgb(65, 163, 35)': 'container-greenshadow',
+		'rgb(8, 107, 177)': 'container-blueshadow',
+		'rgb(235, 115, 29)': 'container-orangeshadow'
 	};
 
 	const colors = [
-		'rgb(106, 10, 119)',
-		'rgb(255, 215, 0)',
-		'rgb(76, 12, 75)',
-		'rgb(128, 128, 128)'
+		'rgb(202, 37, 37)',
+		'rgb(65, 163, 35)',
+		'rgb(8, 107, 177)',
+		'rgb(235, 115, 29)'
 	] as const;
 
 	const socialAlignments = ['horizontal', 'vertical'] as const;
@@ -52,9 +52,9 @@
 					<div class="border-scale-400 bg-scale-300 relative rounded-xl px-8 py-12 drop-shadow-sm">
 						<div class="mb-6 flex flex-col gap-6">
 							<div class="flex items-center gap-3">
-								<h1 class="text-scale-1200 text-2xl">UKG today</h1>
+								<h1 class="text-scale-1200 text-2xl">Acme Industries</h1>
 							</div>
-							<p class="text-scale-1100 text-auth-widget-test">Sign in today for UKG UTA test</p>
+							<p class="text-scale-1100 text-auth-widget-test">Sign in today for Supa stuff</p>
 						</div>
 						<Auth
 							{supabaseClient}
@@ -175,27 +175,27 @@
 </div>
 
 <style>
-	.container-royalpurpleshadow {
+	.container-redshadow {
 		min-width: 364px;
-		box-shadow: -2px 1px 69px 5px rgb(106, 10, 119);
+		box-shadow: -2px 1px 69px 5px rgb(202, 37, 37);
 		border-radius: 1rem;
 	}
 
-	.container-goldshadow {
+	.container-greenshadow {
 		min-width: 364px;
-		box-shadow: -2px 1px 69px 5px rgb(255, 215, 0);
+		box-shadow: -2px 1px 69px 5px rgb(65, 163, 35);
 		border-radius: 1rem;
 	}
 
-	.container-darkpurpleshadow {
+	.container-blueshadow {
 		min-width: 364px;
-		box-shadow: -2px 1px 69px 5px rgb(76, 12, 75);
+		box-shadow: -2px 1px 69px 5px rgb(8, 107, 177);
 		border-radius: 1rem;
 	}
 
-	.container-neutralgrayshadow {
+	.container-orangeshadow {
 		min-width: 364px;
-		box-shadow: -2px 1px 69px 5px rgb(128, 128, 128);
+		box-shadow: -2px 1px 69px 5px rgb(235, 115, 29);
 		border-radius: 1rem;
 	}
 </style>
